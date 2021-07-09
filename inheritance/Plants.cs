@@ -8,6 +8,12 @@ namespace inheritance
         {
             Console.WriteLine("Plants Photosynthesis.");
         }
+
+        public override void ResponseToStimuli()
+        {
+            // base.ResponseToStimuli();
+            Console.WriteLine("Plants react to sun");
+        }
     }
 
     public class SeedPlants : Plants
@@ -18,6 +24,7 @@ namespace inheritance
             base.Eating();
             base.Excretion();
             base.Breathing();
+            base.ResponseToStimuli();
         }
         public void PropagationBySeed()
         {
@@ -30,7 +37,7 @@ namespace inheritance
         public SeedlessPlants()
         {
             base.Photosynthesis();
-                        base.Eating();
+            base.Eating();
             base.Excretion();
             base.Breathing();
         }

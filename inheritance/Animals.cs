@@ -8,6 +8,13 @@ namespace inheritance
         {
             Console.WriteLine("Animals adapt.");
         }
+
+        public override void ResponseToStimuli()
+        {
+            base.ResponseToStimuli();
+            Console.WriteLine("Animals react to charge");
+        }
+
     }
 
     public class Reptiles : Animals
@@ -33,6 +40,7 @@ namespace inheritance
             base.Eating();
             base.Excretion();
             base.Breathing();
+            base.ResponseToStimuli();
         }
         public void Fly()
         {
